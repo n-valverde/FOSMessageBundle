@@ -4,7 +4,7 @@
 
 <h2>{% trans from 'FOSMessageBundle' %}search{% endtrans %}</h2>
 
-<p>{% transchoice threads|length with {'%num%': threads|length } from 'FOSMessageBundle' %}
+<p>{% trans with {'%num%': threads|length, 'count': threads|length } from 'FOSMessageBundle' %}
     threads_found
 {% endtranschoice %}</p>
 
